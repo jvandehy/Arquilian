@@ -1,4 +1,5 @@
 package main
+// stringmod is a way to change a string to make another striung with the changes.
 
 //A string is a sequence of Unicode character
 //String is an immutable type variable

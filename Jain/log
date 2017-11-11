@@ -1,0 +1,39 @@
+This log is for my work based on Hemont Jains 2017  book "Data Structures & Algorithms in Go"
+
+0% Acknowledgement 
+0% Table of Contents
+1% Table of Contents, Continued
+2% Table of Contents, Continued
+3% Table of Contents, Continued
+4% Table of Contents, Continued
+5% Table of Contents, Continued
+6% Table of Contents, Continued
+6% Chapter 0: How to use this book
+	What this book is about	
+		Data Structure defines the way data is arranged in computer memory for fast 
+			and efficient access 
+		Algorithm is a set of instructions to solve problems by manipulating these Data Structures
+	Practice more and More from www.topcoder.com, www.careercup.com, www.geekforgeek.com
+7% Chapter 0: How to use this book, Continued
+8% Chapter 1: Introduction-Programming Overview
+	Variables are simply storage locations for data.
+		For every variable, some memory is allocated.
+	Primative Data Types
+		Boolean
+		Byte (alias of uint8)
+		Integer
+		Unsigned Integer
+		Float
+		String	
+		Rune (alias of int32, used to store Unicode characters)
+		Complex
+8% Chapter 1: Introduction-Programming Overview, Continued
+	String is a sequence of Unicode character
+		String is an immutable type variable
+	Example 1.4
+		converts string to slice of rune
+		changes the slice of rune
+		converts back to a slice
+	** written in this directory as stringmod.go**
+9% Chapter 1: Introduction-Programming Overview, Continued
+
