@@ -7,4 +7,28 @@
 	Supplementary Materials  
 		https://www.learnable.com/books/go1/
 		https://github.com/spbooks/go1/
-3%				
+3% Preface, Continued
+	HTTP Requests
+		"In many of the examples in this book, the interesting part
+		 of what's happening is less about what a browser is displaying
+		 and more about the way the browser interacts with a web server."
+
+	    	 We're interested in seeing:
+			what data was sent in the request
+			what data comes back (response body and the headers				
+
+	Generate Requests
+		"You can generate your own requests from the command line by
+		 using the curl tool. For example:
+			curl -i www.sitepoint.com 
+			
+			result:
+
+			HTTP/1.1 301 Moved Permanently
+			Content-length:0
+			Location:https://www.sitpoint.com
+ 	Go Tools
+		gofmt
+		goimports will automatically add and remove import lines from your code as required
+4% Chapter 1 Welcome New Gopher
+5% 

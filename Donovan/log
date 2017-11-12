@@ -4,4 +4,49 @@
 0% Table of Contents
 1% Table of Contents, Continued
 1% Preface
-2%
+2% Preface, Continued
+2% Chapter 1 Tutorial
+2% Section 1.1 Hello, World
+3% Section 1.2 Command Line Arguments
+	Input comes from:
+		Internal Source (some programs generate their own data)
+		External Source:
+			A File
+			A Network Connection
+			OutPut From Another Program
+			A User At A Keyboard
+			Command Line Arguments
+	Command Line Agruments
+		Args	is a variable
+			part of the os package	
+			its name outside of the os package is os.Args
+			os.Args is a slice of strings
+			os.Args[0] is always the name of the command itself
+	Echo1 Program
+		//	Echo1 prints its command-line arguments
+		package main
+
+		import (
+			"fmt"
+			"os"
+		)
+		func main() {
+			var s, sep string
+			for i :=1; i<len(os.Args); i++ {
+				s += sep + os.Args[i]
+				sep =""
+			} 
+			fmt.Println(s)
+		}
+		
+		// += is an "assigment operator"; it concatenates and assigns back to s
+		// loop is of general structure for initialization; condition; post {
+		//					zero or more statements
+		//					}
+		//		here initialization must be a simple statement:
+		//								a short variable declaration
+		//								an increment
+		//								assignment statement
+		//								
+		//		here condition is boolean
+		

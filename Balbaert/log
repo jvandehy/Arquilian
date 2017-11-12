@@ -27,5 +27,15 @@ This is the log for Ivo Balbaert's 2012 book "The Way to Go"
 			
 			GOPATH may be set to a colon-seperated list of paths inside which
 			 	Go Source code, package objects, and executables may be found
-4%				
+4% Section 2.3 Installling Go on a Linux System, Continued
+4% Section 2.4 Installing Go on an OS X System
+4% Section 2.5 Installing Go on a Windows System
+5% Section 2.5 Installing Go on a Windows System, Continued
+5% Section 2.6 What is installed on your machine
+5% Section 2.7 The Go runtime
+5% Section 2.8 A GO Interpreter
+5% Chapter 3 - Editors, IDE's anbd Other Tools
+5% Section 3.1 Basic Requirements for a Decent Go Development Environment
+5% Section 3.2 Editors and Integrated Development Environments
+6%				
 			
