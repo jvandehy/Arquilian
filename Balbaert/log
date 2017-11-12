@@ -1,2 +1,31 @@
 This is the log for Ivo Balbaert's 2012 book "The Way to Go"
-
+0% Copyright Page
+0% Preface
+1% Preface, Continued
+1% Chapter 1 - Origins, Context and Popularity of Go
+1% Section 1.1 Origins and Evolution
+	Go on Google App Engine Group
+	Go Linked in Group 
+1% Section 1.2 Main Characteristics, Context and Reasons for Developing a New Language
+2% Section 1.2 Main Characteristics, Context and Reasons for Developing a New Language
+2% Chapter 2 - Installation and Runtime Environment
+2% Section 2.1 Platforms and Architectures
+3% Section 2.1 Platforms and Architectures, Continued
+3% Section 2.2 Go Environment Variables
+3% Section 2.3 Installing Go on a Linux System
+	On a Linux system, set the variable in your shell profile, which is
+		$HOME/.bashrc file or the $HOME/.profile
+			export GOROOT=$HOME/go
+			export GOBIN=$GOROOT/bin
+			export GOARCH=amd64
+			export GOOS=linux
+			export PATH=$GOBIN:$PATH
+			export GOPATH=$HOME/goprograms or export GOPATH=$GOROOT
+			
+			$HOME is /home/user1 if you are logged in as user1
+			export GOPATH=$GOPATH:
+			
+			GOPATH may be set to a colon-seperated list of paths inside which
+			 	Go Source code, package objects, and executables may be found
+4%				
+			
