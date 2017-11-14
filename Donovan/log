@@ -49,4 +49,24 @@
 		//								assignment statement
 		//								
 		//		here condition is boolean
-		
+
+	Echo2 Program
+		// Echo2 prints its command-line arguments.
+
+		package main
+
+		import (
+			"fmt"
+			"os"
+		)
+
+		func main() {
+			s, sep := "", ""
+			for _, arg := range os.Args[1:] {
+				s += sep + arg
+				sep = " "
+			} 
+			fmt.Println(s) 
+		}
+		//A form of the for loop iterates over a range of values from a data type like a string or a slice.
+4% 	
