@@ -37,5 +37,8 @@ This is the log for Ivo Balbaert's 2012 book "The Way to Go"
 5% Chapter 3 - Editors, IDE's anbd Other Tools
 5% Section 3.1 Basic Requirements for a Decent Go Development Environment
 5% Section 3.2 Editors and Integrated Development Environments
-6%				
+6% Section 3.2 Editors and Integrated Development Environments, Continued
+6% Section 3.3 Debuggers
+6% Section 3.4 Building and Running Go-programs with command and Makefiles
+7%				
 			
