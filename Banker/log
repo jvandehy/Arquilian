@@ -1,8 +1,8 @@
  This is the log book for Kyle Baker's 2016 Book "MongoDB in Action, Second Edition" (Manning)
 
 1% Copyright Page
-2% Table of Contents
-3% Preface
+1% Table of Contents
+1% Preface
 
 	"Its easy to forget that our digital interactions, from commenting and tweeting to searching
 	and sorting, are in essence interactions with a database."
@@ -20,6 +20,6 @@
 				human friendly
 		bases its query language on JSON
 
-4% Acknowledgements
-5% About This Book
-	
+1% Acknowledgements
+2% About This Book
+	Need to install Mongo DB	

@@ -40,5 +40,21 @@ This is the log for Ivo Balbaert's 2012 book "The Way to Go"
 6% Section 3.2 Editors and Integrated Development Environments, Continued
 6% Section 3.3 Debuggers
 6% Section 3.4 Building and Running Go-programs with command and Makefiles
-7%				
-			
+7% Section 3.5 Formatting Code: gofmt
+	go fmt imposes the offical "standard code formattin and style" on the Go source code
+		A syntax level rewritting tool
+		A simple form of refactoring
+		Example: (command line)
+			gofmt -w anyprogram.go  where the -w safes the changes
+			gofmt -w *.go works on all go files
+			gofmt map1 works on all go files in map 1 directory and its subdirectories
+7% Section 3.6 Documenting code: godoc
+	godoc extracts and generates documentation for Go Programs and Packages
+		extracts comments that appear before the top level declarations in the source code
+		example:
+			godoc package
+7% Section 3.7 Other Tools
+7% Section 3.8 Go's Performance
+7% Section 3.9 Interactions with Other Languages
+8%
+						
