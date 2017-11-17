@@ -29,4 +29,9 @@
 3% Chapter 1 A Database for the Modern Web
 3% Section 1.0 Intro to Chapter
 	"What are the trade offs involved in moving to a non-relational database?"
-	
+
+	Mongo DB is a database management system designed to rapidly develop 
+		1. web applications and 
+		2. internet structure.
+
+		
