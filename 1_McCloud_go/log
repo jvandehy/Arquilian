@@ -1,1 +1,39 @@
-This is the log for Todd McCloud's 2017 Course "Learn How to Code Googles Go Programming Language"
+This is the log for Todd McCloud's 2017 Course "Learn How to Code Google's Go Programming Language"
+
+Welcome & Course Overview
+Variables, Value and Type
+	variadic parameters
+		signified by ...<some type>
+	type interface
+		type interface{} is the empty interface
+		everything is of type interface
+	...interface{} as a parameter means
+		"as many arguments of any type"
+	notation for identifier from a particular package
+		example
+			fmt.Println()
+				identifer Println from package fmt
+	statement
+		statement is the smallest standalone element of a program
+	expression	
+		combination of one or more:
+			explicit values
+			constants
+			variables
+			operators
+			functions
+		that the programming language interprets and computes
+		to PRODUCE ANOTHER VALUE.
+Excercises - Ninja Level 1
+	Hands-on Exercise #1
+		1. Using the short declaration operator, Assign these values to Variables
+		with the identifiers x and y and z
+			a. 42
+			b. James Bond
+			c. true
+		2. Now print the values stored in those variables using
+			a. a single print statement
+			b. multiple print statements
+		3. Solution: see ninga1_1.go
+	Hands-on Exercise #2
+		1. Use var to declare three variables.				
