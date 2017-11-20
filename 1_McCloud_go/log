@@ -23,10 +23,12 @@ Variables, Value and Type
 			operators
 			functions
 		that the programming language interprets and computes
+
 		to PRODUCE ANOTHER VALUE.
 Excercises - Ninja Level 1
+
 	Hands-on Exercise #1
-		1. Using the short declaration operator, Assign these values to Variables
+		1. Using the short declaration operator, assign these values to variables
 		with the identifiers x and y and z
 			a. 42
 			b. James Bond
@@ -34,6 +36,82 @@ Excercises - Ninja Level 1
 		2. Now print the values stored in those variables using
 			a. a single print statement
 			b. multiple print statements
-		3. Solution: see ninga1_1.go
+
+	Solution for Exercise #1: see ninga1_1.go
+
+		package main
+
+		iqnimport (
+			"fmt"
+			)
+
+		func main () {
+			x := 42
+			y := "James Bond"
+			z := true
+			fmt.Println(x,y,z}
+			fmt.Println(x)
+			fmt.Println(y)
+			fmt.Println(z)
+		}
+	
 	Hands-on Exercise #2
-		1. Use var to declare three variables.				
+		1. Use var to declare three variables, the variables should have
+		package level scope. Do not assign values to the variables. Use the following
+		identifiers for the variables and make sure the variables are of the following
+		type:
+			a. identifier "x" type int
+			b. identifier "y" type string
+			c. identifies "z" type bool
+		2. In func main
+			a. print out the values for each identifier
+			b. the compiler assigned values to the variables. What are these called?
+
+	Solution for Exercise #2: see ninga1_2.go
+
+		package main
+		
+		import (
+			"fmt"
+			)
+		
+		var x int
+		var y string
+		var z bool
+		
+		func main () {
+			fmt.Println(x,y,z)
+		}
+					
+	Hand-on Exercise #3
+		Using code from the previous excercize,
+			1. At the package level scope,
+			assign the following values to the three variables:
+				for x assign 42
+				for y assign "James Bond"
+				for z assign true	
+			2. in func main
+				a. use fmt.Sprintf to print all of the values to one single string
+				Assign the returned value of type string with the identifier s
+				b. print out the value stored by variable "s"
+
+	Solution for Excercise #3
+	
+		package main
+		
+		import (
+			"fmt"
+			)
+		
+		var x int = 42
+		var y string = "James Bond"
+		var z bool = true
+		
+		func main () {
+			// Sprintf is format printing. 
+			// %v is the default for each type, 
+			//t%v is tab and then default formatting
+			s := fmt.Sprintf("%v\t%v\t%v",x,y,z)
+			fmt.Println(s)
+			}
+			
