@@ -1,0 +1,44 @@
+This is the log for Wiliam Kennedy's 2015 book "Go in Action"
+Chapter 1 Introducing Go
+1.1 Solving modern programming challenges with Go
+1.1.1 Development Speed
+	Lightning Quick Compiles
+		"smart compiler"
+		"simplified dependency resolution algorithms"
+1.1.2 Concurrency
+	Write an application that effectively uses the available resources of the hardware running on it
+		"thread syncronization code" - prone to errors
+		Goroutines are like threads, but use far less memory and require less code to use
+		Channels are data structures that let you send typed messages between Goroutines
+		-> Programming Model where:
+			you send data between goroutines, rather than let goroutines fight to use the same data
+	Goroutines
+		are functions that run concurrently with other goroutines (done by threads in other languages)
+	Channels
+		are data structures that enable safe data communication between goroutines
+		help you to avoid problems typically seen in languages that allow shared memry access
+
+	"The hardest part of concurrency is ensuring that your data isn't unexpectedly modifiec by concurrencly running processes, threads, or goroutines.
+		When multiple threads change the same datawithout locks  or synv\chronization. heatache always follows.
+
+		Channels help solve this problem by providing a pattern that makes data safe from concurrent modification.
+1.1.3 Go's Type System
+	"Go provides a flexible hierarchy-free type system that enables code reuse with minimal refactoring overhead"
+	Composition
+		"Go developers simply embed types to reuse functionality in a design pattern called "Composition"
+	Model Behaviour	
+		"Go has a unique interface impelmentation that allows you to model behavior, rather than model types"
+		"You don't need to declare that you're implementing an interface in Go; the compliler does the work 
+		of determining whether values of your types satisfy the interfaces you are using"
+	Interfaces
+		"Go interfaces allow you to express the behavior of a type"
+		"If a value of a type implements an interface, it means the value has a specific set of behaviors"
+		"In Go, if your type implements the methods of an interface,a value of your type can be stored in a value of that interface type.
+		"Go's interfacesare smaller and more aligned with single actions"
+1.1.4 Memory Management
+1.2 Hello Go
+1.2.1 Introducing the Go Playground
+Chapter 2 Go Quick Start
+2.1 Program Architecture
+
+				
