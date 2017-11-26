@@ -1,0 +1,103 @@
+This log is for Matt Butcher's 2018 book "Go in Practice"
+
+Copyright Page
+Table of Contents
+Foreword 
+	This book is intended to be spiritual successor to "Go in Action"
+Preface
+Acknowledgements
+About this Book
+About the Authors
+About the Cover Illustration
+Part 1 Background & Fundamentals
+1.0 Chapter 1 Getting into Go
+1.1 What is Go
+	The layers of Go:
+		Innermost layer: A Programming Language
+		Middle layer: A Development Tool Chain
+			Testing
+			Documentation
+			Formatting
+		Outer layer: An Ecosystem
+			Built in Package Management
+			Third Party Libraries
+1.2 Noteworthy Aspects of Go
+	Multiple Return Values
+		Example (with returns "unnamed")
+			package main
+			import (
+				"fmt"
+			)
+			func Names (string, string) {     // two strings defined for return
+				return "Foo", "Bar"      // two strings are returned
+			}
+			func main () {
+				n1, n2 := Names()	// variables get two values
+				fmt.Println(n1, n2)
+				
+				n3, _ := Names()	// gets first return value and skips second	
+
+				fmt.Println(n3)
+			}
+		Example (with returns named)
+			// you can name returns and work with them the same way you do variables
+			package main
+			import (
+				"fmt"
+			)
+			func Names (first string, second string) {      // two strings (with names) defined as return variables
+				first = "Foo"
+				second = "Bar"      			// values assigned to named return variables
+				return					// return is called with no values
+			}
+			func main () {
+				n1, n2 := Names()			// variables ase filled with values
+				fmt.Println(n1, n2)
+			}
+			
+	A Modern Standard Library
+		Networking - Building applications in  a networked world means applications need to work both as:
+			Client (Clients connect to other networked devices) 0r
+			Server (Server are for other applications to connect to)
+		Example of Common Networking Setups:
+			HTTP
+			TCP (Transmission Control Protocol)	
+			UDP (User Datagram Protocol)
+		Example (read TCP status)
+			package main
+			import (
+				"bufio"
+				"fmt"
+				"net"
+			)
+
+			func main () {
+				conn, _ := net.Dial("tcp","golang.org:80")     // connects over TCP
+								               // connecting directly to a port is part of the net package
+									       // Dial function connects using the type and endpoint specified
+									       // in this case, Dialmakes a TCP connection to golang.org on port 80
+				fmt.Fprintf(conn, "GET / HTTP/1.0\r\n\r\n")    // sends string over connection
+									       // over the connection, a GET request is sent
+				status, _ := bufio.Newreader(conn).ReadString('\n')
+				fmt.Println(status) 				// prints the first response line
+			}
+
+			// Listen (also in net package) can be used in a similar manner
+			// Listen is used to "listen" on a port and act on incoming connections
+
+		Common Case of Networking
+			HTTP
+			REST (Representational State Transfer)
+			web servers
+		
+			To handle this common case Go has the http package
+				http package provides both:
+					a client
+					a server
+			Example of using the http package:
+				package main
+				import (
+					"fmt"
+					"io/ioutil"
+					"net/http"
+				)
