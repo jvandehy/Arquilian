@@ -1,0 +1,103 @@
+This is the log for Michael Alexander's 2016 Book "Excel 2016 Power Programming with VBA"
+Copyright page
+About the Authors/Editors/Credits
+Table of Contents
+List of Illustrations
+Introduction
+	Topics covered
+		Visual Basic for Applications ("VBA")
+		VBA  is the programming language built into Excel
+		This book ..."shows you how to write programs that automate various tasks in Excel"
+	What you need to know
+	What you need to have
+	Conventions in this book
+		Excel Commands
+			"context sensitive Ribbon menu system"
+		Visual Basic Editor Commands
+			Visual basic Editor is the window in which you work with your VBA code.
+	How this book is organized
+Part 1 Introduction to Excel VBA
+Chapter 1 Essentials of Spreadsheet Application Development
+	What is a Spreadsheet Application
+		"spreadsheet file (or group of related files) that is designed so that:
+			 someone other than the developer can perform useful work without extensive training"
+	A good spreadsheet application
+	Steps for Application Development
+		Determining User Needs
+		Planning an Application that meets user needs
+		Determining the Appropriate User Interface
+			Customizing the Ribbon
+			Customizing Shortcut Menus
+			Creating Shortcut keys
+			Creating custom dialog boxes
+			Using AtiveX controls on a worksheet
+				Excel lets you add userform ActiveX controls to
+					worksheets "drawing layer"
+				Drawing layer is an invisible layer on top of a sheet that holds 
+					pictures, charts and other objects.
+				Active X controls let the user make choices by operating familiar controls
+			Controls come in two types
+				Form Controls (Easier to Use)
+				Active X Controls (More Flexible)
+		Concerning Yourself with the End User
+		Testing the Application
+		Making the application bulletproof
+			Locking Cells / Objects
+			Hiding Formulas
+			Protecting Workbook
+			Passwords
+		Making the applicaiton aestetically appealing and intuitive
+			Consistancy
+			Keep it simple
+		User Help System
+		Documentation
+		Distribution
+		Updating
+Chapter 2 Introducing Visual Basic for Applications
+	Getting a head start with the Macro recorder
+		"A macro is essentially VBA code that you can call to execute any number of actions."
+		"A recorded macro is technically no different from a VBA procedure you create manually."
+	Creating your first macro
+		1. Developer Tab -> "Record Macro"
+ 			// starts the "Macro Recorder" and activates the "Record Macro" dialog box
+		2. Enter a single-word name for the macro (for example MyName )
+		3. Assign the macro to the shortcut key (for example Ctrl+Shift+N)
+		4. Click the OK button
+			// closes the "Record Macro" dialog box
+			// begins the recording of your actions
+		5. Select any cell on your Excel Spreadsheet, and type in something (for Example "Jeff"), then Enter.
+		6. Developer tab -> "Stop Recording"
+			// this creates a macro in a new module named "Module1" 
+	Examining your first macro
+		7. Open the Visual Basic Editor Developer -> Visual Basic
+		8. Examine the "Project Window" for a list of open workbooks and addins
+		8b. (This can be done by View -> "Project Explorer" if the defalut window doesnt appear.
+		9. Expand the Window to make Module1 visible.
+		10. Double click Module1.
+			// the code in the module appears in the "Code Window"
+	
+	Code of first macro
+		Sub MyName()
+		'	
+		' MyName Macro
+		'	
+		' Keyboard Shortcut: Ctrl+Shift+N
+		'
+		' ActiveCell.FormulaR1C1 = "Jeff"
+		End Sub
+
+	Testing the Macro
+		Return to Excel and Activate a worksheet
+		Select a cell and press Ctrl+Shift+N
+		Your name should be entered into the cell
+
+	Editing the macro
+		insert
+			ActiveCell.Font.Bold = True
+			// This makes the text bold when the macro is used. 
+
+	Comparing absolute and relative macro recording
+		Excel has two modes for recording
+			1. Absolute Reference
+			2. Relative Reference	
+
