@@ -1,0 +1,32 @@
+ This is the log for David Flanagan's 2011 Book "JavaScript: The Definitive Guide" (Manning)
+Table of Contents
+A Note Regarding Supplemental Files
+Preface
+Chapter 1. Introduction to Javascript
+Section Introduction
+	JavaScript "behavior of web pages"
+	JavaScript
+		high-level
+		dynamic
+		untyped
+		interpreted
+	JavaScript Core Language
+		a minimal API forworking with 
+			text
+			arrays
+			dates
+			regular expressions
+		host environment provides:
+			input & output
+			features
+				networking
+				storage
+				graphics
+		host environment is usually a browser (client side javascript)
+	Javascript Interpretors
+		every web browser
+			embed within <script> tags in HTML files
+			browser "Web Developer Tools"	
+		 simple console API
+Section Core JavaScript
+
