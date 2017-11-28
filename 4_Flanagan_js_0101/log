@@ -1,0 +1,101 @@
+ This is the log for David Flanagan's 2011 Book "JavaScript: The Definitive Guide" (Manning)
+Table of Contents
+A Note Regarding Supplemental Files
+Preface
+Chapter 1. Introduction to Javascript
+Section Introduction
+	JavaScript "behavior of web pages"
+	JavaScript
+		high-level
+		dynamic
+		untyped
+		interpreted
+	JavaScript Core Language
+		a minimal API forworking with 
+			text
+			arrays
+			dates
+			regular expressions
+		host environment provides:
+			input & output
+			features
+				networking
+				storage
+				graphics
+		host environment is usually a browser (client side javascript)
+	Javascript Interpretors
+		every web browser
+			embed within <script> tags in HTML files
+			browser "Web Developer Tools"	
+		 simple console API
+Section Core JavaScript
+	Lexical Structure:
+		comments
+		semicolons
+		Unicode charactor set
+	Types. Values. Variables
+		a variable is a symbolic name for a value
+		var keyword
+			var x;   // declare a variable named x
+		assignment
+			values can be assigned with the "equals sign", =
+			x = 0;  //now the variable x has the value 0.
+		types of values
+			Integers -just one type for integers and real numbers
+			Strings
+			Boolean
+			null
+		Objects
+			Objects are javascripts most important type
+			Objects is a collection of
+				name/value pairs
+				a string to map value
+			Object example
+				var book {
+					topic : "javascript",	// the property topic has the value "javascript"
+					fat : true		// the property fat has value true
+				}
+			Objects values can be accessed
+				book.topic                      // => "javascript"
+				book["topic"]			// => "javascript"
+			Objects can have new properties created by assignment
+				book.author = "Flanagan"
+			Objects can be empty
+				book.contents = {};
+			Objects can hold Arrays
+				var data = {			// an array with two properties 
+					trial1: [[1,2],[3,4]],
+					trial2: [[2,3],[4,5]] 	// each property is an array
+								// the elements of the arrays are arrays
+					}
+		Arrays
+			Arrays are numerically indexed lists of values
+			Arrays Example
+				var primes = [2,3,5,7];		// an array of 4 values
+			Arrays Indexed to 0
+				primes[0] = 2;
+			Arrays have length
+				primes.length = 4;
+			Arrays indexed to last element
+				primes[primes.length - 1];
+			Arrays can have values added by assignment			
+				primes[4] = 9;
+			Arrays can have values changed by assignment
+				primes[4] = 11;
+			Arrays can be empty
+				var empty = [];
+			Arrays can hold objects
+				var points [		// an array with two elements
+					{x:0, y:0},
+					{x:1, y:1}	// both elements are objects
+					]
+		Expressions
+			An Expression is a phrase of javascript that can be evaluated to produce a value
+			An Initializer Expression is a syntax for listing array elements within 
+				square braces or
+				curly braces
+			Expressions use operators
+			Operators act on operands to produce new values
+				Arithmatic Operators
+					addition, subtration, multiplication, division
+				Concatonation
