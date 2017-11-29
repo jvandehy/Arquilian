@@ -5,4 +5,42 @@ Foreword
 Preface
 	"This book will give you a practical focus on using SQSL, and will steer you 
 	away from unnecessary technical details"
+Acknowledgements
+Chapter 1 Why Learn SQL
+	"Structured Query Language"
+Chapter 2 Databases
+Section What is a DataBase
+	"Database" - anything that collects and holds data
+	RDBMS - Relational Database Management System
+Section Exploring Relational Databases
+	Example
+		ORDER table refers to CUSTOMER table for customer information
+			ORDER Table
+				has field called CUSTOMER_ID
+			Example:
+				ORDER_ID	ORDER_DATE 	SHIP_DATE 	CUSTOMER_ID
+				3		2015-04-23	2015-04-23		5
+				4		2015-04-18	2015-04-22		4
 
+			CUSTOMER table 
+				holds the customer information for each customer id.
+			Example:
+				CUSTOMER_ID 	NAME		REGION 	  	STREET ADDRESS
+				1		Lite Industrial	Southwest	729 Ravine Way
+				2		Rex Tooling	Southwest	6129 Collie Blvd
+		When we go through the ORDER Table, we can use the CUSTOMER_ID to look up the customer information
+		in the CUSTOMER Table
+
+	Relational Database - tables have fields that point to information in other tables
+	Normalization 	- seperating the different types of data into their own tables
+			(rather than putting them in one table)
+		    	- avoids redundancy, "bloating", maintanance issues
+Section Why Separate Tables
+Section Choosing a Database Solution
+	Lightweight Database
+		Users - One to a small number
+		Overhead - None or little
+		Examples of Lightweight Database solutions
+			SQLite
+			Microsoft Access
+	Centralized Database
