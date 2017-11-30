@@ -8,6 +8,7 @@ Preface
 Acknowledgements
 Chapter 1 Why Learn SQL
 	"Structured Query Language"
+	SQL is a universal language to work with data on database platforms
 Chapter 2 Databases
 Section What is a DataBase
 	"Database" - anything that collects and holds data
@@ -44,3 +45,22 @@ Section Choosing a Database Solution
 			SQLite
 			Microsoft Access
 	Centralized Database
+		Users -  tens, hundreds othousands of users
+		Servers - Centralized Databases run on servers
+			- client requests, server gives it up!
+		Examples - 
+			MySQL
+				highly recomended, open source, free to use, straightforward to install and set up.
+				used by Facebook, Google, eBay, Twittter 
+			PostgreSQL
+			MariaDB
+			Others (Microsoft SQL Server, Oracle, IBM DB2)
+		You install these solutions onto a computer, and turn that computer into a server
+		
+	Universal aspects 	
+		"the experience betseen different database solutions should be largely the same."
+Chapter 3 SQLite
+Section What is SQLite
+Section SCLiteStudio
+	an SQL editor
+	install from sqlitestudio.pl
