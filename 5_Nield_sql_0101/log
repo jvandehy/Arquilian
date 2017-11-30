@@ -86,4 +86,16 @@ Section Retrieving Data with SQL
 			SELECT CUSTOMER_ID, NAME FROM CUSTOMER
 Section Expressions in SELECT Statements
 	Calculations
-		"Generate a column 	
+		"Generate a calculated column"
+		Example:
+			SELECT
+			PRODUCT_ID,
+			DESCRIPTION,
+			PRICE,
+			PRICE * 1.07 AS TAXED_PRICE
+			FROM PRODUCT;
+		Result (partial)
+			PRODUCT_ID	DESCRIPTION	PRICE		TAXED_PRICE
+			1		Copper		7.51		8.0357
+			2		Aluminum	2.58		2.7606
+			3		Silver		15		16.05 	
