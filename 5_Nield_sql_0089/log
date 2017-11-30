@@ -64,3 +64,26 @@ Section What is SQLite
 Section SCLiteStudio
 	an SQL editor
 	install from sqlitestudio.pl
+Section Importing and Navigating Databases
+	Data Types
+		Integer
+		Text
+		Datetime
+		Boolean
+		Decimal
+Chapter 4 Select (Statement)
+Section Retrieving Data with SQL
+	Select Statement
+		Most Common -  retrieve and display data
+		"far more" - transform data; build summaries
+		Example: (Select all columns of a table)
+			SELECT * FROM CUSTOMER;
+			// This runs a query and displays the results
+			// SELECT allows you to choose which columns to pull from a table
+			// * is a placeholder to specify "all columns"
+			// CUSTOMER is the name of the table being queried
+		Example: (Select specific columns of a table)
+			SELECT CUSTOMER_ID, NAME FROM CUSTOMER
+Section Expressions in SELECT Statements
+	Calculations
+		"Generate a column 	
