@@ -86,7 +86,7 @@ Excercises - Ninja Level 1
 	Hand-on Exercise #3
 		Using code from the previous excercize,
 			1. At the package level scope,
-			assign the following values to the three variables:
+			andsissign the following values to the three variables:
 				for x assign 42
 				for y assign "James Bond"
 				for z assign true	
@@ -114,4 +114,46 @@ Excercises - Ninja Level 1
 			s := fmt.Sprintf("%v\t%v\t%v",x,y,z)
 			fmt.Println(s)
 			}
-			
+
+	Hands-on Exercise #4 
+		Sidebar; Documentation re "underlying type"
+		    Types
+			"A type determines a set of values together with operations and methods 
+			specific to those values"	
+				Type => "set of values".
+				Type => "operations (and methods) specific to those values"	
+		    Underlying Type
+			"Each type T has an underlying Type"
+				1. If T is one of the pre-declared 
+a					boolean
+					numeric
+					string
+					or a type literal
+				    Then the underlying type is the type itself
+				2. Otherwise, T's underlying type is the underlying type of the type T referes
+				    in its type declaration
+			Example of Underlying type
+				type (
+				   A1 = string
+				   A2 = A1
+				)
+
+				type (
+				   B1 string
+				   B2 B1
+				   B3 []B1
+				   B4 B3
+				)
+				"the underlying type of 
+					string is string
+					A1 is string
+					A2 is string	
+					B1 is string
+					B2 is string"
+
+				"the underlying type of
+					[]B1 is []B1
+					B3 is   []B1
+					B4 is   []B1"
+	Hands-On Excersise #4
+		1. at the package level scope, using the var keyword, create a VARIABLE with the IDENTIFIER "y"
