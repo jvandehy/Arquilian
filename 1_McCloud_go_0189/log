@@ -174,6 +174,16 @@ a					boolean
 		var x spin
 
 		func main () {
-			fmt.Println(x)
-			fmt.Println("%T", x)
-			
+			fmt.Printf("%v%v\n%v%T\n","the value is ",x,"the type is ",x)
+			x = 42
+			fmt.Printf("%v",x)
+			}			
+	Hands-on Excersize #5
+		1. building on the code from the previous excersize, at the package level scope,
+		using the "var" keyword, create a variable with identifier "y". The variable should be 
+		of the underlying type of your custom type "x".
+		2. in the func main,now do this
+			a. use conversion to convert the type of the value stored in "x" to the underlying
+			type
+			b. then use the "=" operator to assign that value to "y"
+			c.
