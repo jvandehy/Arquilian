@@ -115,7 +115,7 @@ Excercises - Ninja Level 1
 			fmt.Println(s)
 			}
 
-	Hands-on Exercise #4 
+	Hands-on Exercise #4 (Sidebar)
 		Sidebar; Documentation re "underlying type"
 		    Types
 			"A type determines a set of values together with operations and methods 
@@ -155,5 +155,25 @@ a					boolean
 					[]B1 is []B1
 					B3 is   []B1
 					B4 is   []B1"
-	Hands-On Excersise #4
-		1. at the package level scope, using the var keyword, create a VARIABLE with the IDENTIFIER "y"
+	Hands-On Excersise #4 (excersize)
+		1. Create your own type. Have the underlying type be int.
+		2. Create a Variable of your new type with identifier "x" using the "var" keyword 
+		3. in the func main
+			a. print out the value of variable "x"
+			b. print out the type of variable "x"
+			c. assign 42 to the variable "x" using the "=" operator
+			d. print out the value fo the variable "x"
+	Solution (Hands-on excersize #4)
+		package main
+
+		import (
+			"fmt"
+			)
+	
+		type spin int
+		var x spin
+
+		func main () {
+			fmt.Println(x)
+			fmt.Println("%T", x)
+			
