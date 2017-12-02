@@ -94,10 +94,28 @@ Part 1 Background & Fundamentals
 				http package provides both:
 					a client
 					a server
-			Example of using the http package:
+			Example of using the http package: (HTTP GET: http_get.go)
 				package main
 				import (
 					"fmt"
 					"io/ioutil"
 					"net/http"
 				)
+				
+				func main() {
+					resp, _ := http.Get("http://example.com/")	// makes a HTTP GET request
+					body, _ := ioutil.ReadAll(resp.Body)		// reads the body from the response
+					fmt.Fprintln(string(body))			// prints the body as a string
+					resp.Body.Close()				// closes the connection
+					}
+				// This example shows how to print the body of a simple HTTP GET request.
+		HTTP CLient 
+			Simple GET requests
+			Deal with proxies
+			perform TLS handling
+			set Headers
+			handle cookies
+			create client objects
+			swap out the transport layer
+		HTTPS Server
+			
