@@ -1,13 +1,11 @@
  This is the log for Mal Curtis's 2015 book "Level Up your Web Apps with Go"
 
-0% Copyright Page
-1% About the AUthor
-1% Preface
-2% Preface, Continued
+Copyright Page
+About the AUthor
+Preface
 	Supplementary Materials  
 		https://www.learnable.com/books/go1/
 		https://github.com/spbooks/go1/
-3% Preface, Continued
 	HTTP Requests
 		"In many of the examples in this book, the interesting part
 		 of what's happening is less about what a browser is displaying
@@ -30,5 +28,5 @@
  	Go Tools
 		gofmt
 		goimports will automatically add and remove import lines from your code as required
-4% Chapter 1 Welcome New Gopher
-5% 
+Chapter 1 Welcome New Gopher
+

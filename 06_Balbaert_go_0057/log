@@ -1,0 +1,59 @@
+This is the log for Ivo Balbaert's 2012 book "The Way to Go"
+Copyright Page
+Preface
+Chapter 1 - Origins, Context and Popularity of Go
+Section 1.1 Origins and Evolution
+	Go on Google App Engine Group
+	Go Linked in Group 
+Section 1.2 Main Characteristics, Context and Reasons for Developing a New Language
+Chapter 2 - Installation and Runtime Environment
+Section 2.1 Platforms and Architectures
+Section 2.1 Platforms and Architectures, Continued
+Section 2.2 Go Environment Variables
+Section 2.3 Installing Go on a Linux System
+	On a Linux system, set the variable in your shell profile, which is
+		$HOME/.bashrc file or the $HOME/.profile
+			export GOROOT=$HOME/go
+			export GOBIN=$GOROOT/bin
+			export GOARCH=amd64
+			export GOOS=linux
+			export PATH=$GOBIN:$PATH
+			export GOPATH=$HOME/goprograms or export GOPATH=$GOROOT
+			
+			$HOME is /home/user1 if you are logged in as user1
+			export GOPATH=$GOPATH:
+			
+			GOPATH may be set to a colon-seperated list of paths inside which
+			 	Go Source code, package objects, and executables may be found
+Section 2.4 Installing Go on an OS X System
+Section 2.5 Installing Go on a Windows System
+Section 2.6 What is installed on your machine
+Section 2.7 The Go runtime
+Section 2.8 A GO Interpreter
+Chapter 3 - Editors, IDE's anbd Other Tools
+Section 3.1 Basic Requirements for a Decent Go Development Environment
+Section 3.2 Editors and Integrated Development Environments
+Section 3.3 Debuggers
+Section 3.4 Building and Running Go-programs with command and Makefiles
+Section 3.5 Formatting Code: gofmt
+	go fmt imposes the offical "standard code formattin and style" on the Go source code
+		A syntax level rewritting tool
+		A simple form of refactoring
+		Example: (command line)
+			gofmt -w anyprogram.go  where the -w safes the changes
+			gofmt -w *.go works on all go files
+			gofmt map1 works on all go files in map 1 directory and its subdirectories
+Section 3.6 Documenting code: godoc
+	godoc extracts and generates documentation for Go Programs and Packages
+		extracts comments that appear before the top level declarations in the source code
+		example:
+			godoc package
+Section 3.7 Other Tools
+Section 3.8 Go's Performance
+Section 3.9 Interactions with Other Languages
+Part 2 Coure Constructs and Techniques of the Language
+Chapter 4 - Basic Constructs and Elementary Data Types
+Section 4.1 Filenames - Keywords - Identifers 
+Section 4.2 Basic Structure and Components of a Go Program
+ 
+						

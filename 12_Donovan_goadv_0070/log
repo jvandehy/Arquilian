@@ -1,13 +1,11 @@
- This is the log for Alan A. A. Donovan's 2015 book "The Go Programming Language"
-0% About this E-Book
-0% Copyright Page
-0% Table of Contents
-1% Table of Contents, Continued
-1% Preface
-2% Preface, Continued
-2% Chapter 1 Tutorial
-2% Section 1.1 Hello, World
-3% Section 1.2 Command Line Arguments
+This is the log for Alan A. A. Donovan's 2015 book "The Go Programming Language"
+About this E-Book
+Copyright Page
+Table of Contents
+Preface
+Chapter 1 Tutorial
+Section 1.1 Hello, World
+Section 1.2 Command Line Arguments
 	Input comes from:
 		Internal Source (some programs generate their own data)
 		External Source:
@@ -30,6 +28,7 @@
 			"fmt"
 			"os"
 		)
+
 		func main() {
 			var s, sep string
 			for i :=1; i<len(os.Args); i++ {
@@ -69,4 +68,3 @@
 			fmt.Println(s) 
 		}
 		//A form of the for loop iterates over a range of values from a data type like a string or a slice.
-4% 	
