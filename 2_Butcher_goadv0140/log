@@ -118,4 +118,25 @@ Part 1 Background & Fundamentals
 			create client objects
 			swap out the transport layer
 		HTTPS Server
-			
+		HTML
+			html package
+				escaping and unescaping HTML
+			html/template package
+				creating re-usable HTML templates
+		Cryptography
+			hashes
+			encription of data
+		Data Encoding
+			base64 encoding
+			JSON (Javascript Object Notation)
+			XML (Extensible Markup Language)
+			"Internally, Go is entirely handled as UTF-8"
+			"But not everythimg passed around between systems is UTF-8, and you have to deal with data formats
+			that add meaning to the text"
+			" ... go packages provide the ability to turn a JSON string into instantiated objects"
+			" ... go interfaces provide a way to switch between encodings ..."		
+		Concurrency with goroutines and channels
+			Goroutine "a function that can be run concurrently to the main program or other goroutines"
+			Example:
+		
+				
