@@ -97,7 +97,10 @@ Chapter 2 Introducing Visual Basic for Applications
 			// This makes the text bold when the macro is used. 
 
 	Comparing absolute and relative macro recording
-		Excel has two modes for recording
-			1. Absolute Reference
-			2. Relative Reference	
-
+	Excel has two modes for recording
+		1. Absolute Reference
+			Excel's default recording mode is absolute reference
+			absolute refence means "it does not automatically adjust when the formula is pasted into a new location"
+		2. Relative Reference	
+	Example: 
+	
