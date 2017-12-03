@@ -102,5 +102,35 @@ Chapter 2 Introducing Visual Basic for Applications
 			Excel's default recording mode is absolute reference
 			absolute refence means "it does not automatically adjust when the formula is pasted into a new location"
 		2. Relative Reference	
-	Example: 
+	Macro Example: "Absolute Reference"
+		Recording The Macro (this is done using the spreadsheet "Sample.xlsm", but any spreadsheet with text in column D would work)
+			Select Cell A1 (Before recording)
+			Developer Tab => Record Macro => Record Macro Menu
+				Name => "AddTotal"
+				Save Location => "This Workbook"
+				=> OK
+			// at this point Excel is recording your actions
+			While Recording
+				Select Cell A16; type "Total" in Cell A16
+				Select Cell D16 and type "=COUNTA(D2:D15)
+				// This gives a  count of the number of cells that have text in them 
+			Developer Tab => "Stop Recording"
+			// The Sample.xlsm Spreadsheet has the value "14" in Cell D16, as expected.
+		Testing the Macro
+			By deleting the row 16, we can remove the desired text and formulas from the sheet.
+			Then by running the macro;
+				Developer Tab => Macros => Macro name "AddTotal" => "Run"
+			Result:  The correct label and total in cell D16 appears on line 16'
+		Code Examination (Macro "AddTotal")
+			Developer Tab => Macros => Macro name "AddTotal" => "Edit"
+			// This opens the Visual Basic Editor
+				Sub AddTotal()
+				  Range("A16").Select
+				  ActiveCell.FormulaR1C1 = "Total"
+				  Range("D16"). Select
+				  ActiveCell.FormulaR1C1 ="=COUNTA(R[-14]C:R{-1}C)"
+				End Sub		
+				
+			
+		
 	
