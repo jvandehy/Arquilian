@@ -125,12 +125,48 @@ Chapter 2 Introducing Visual Basic for Applications
 			Developer Tab => Macros => Macro name "AddTotal" => "Edit"
 			// This opens the Visual Basic Editor
 				Sub AddTotal()
-				  Range("A16").Select
-				  ActiveCell.FormulaR1C1 = "Total"
-				  Range("D16"). Select
+				  Range("A16").Select			// when asked to select cell range A16, 
+									// thats what it did
+				  ActiveCell.FormulaR1C1 = "Total"   
+				  Range("D16"). Select			// when asked to select cell range D16,
+									// thats what it did
 				  ActiveCell.FormulaR1C1 ="=COUNTA(R[-14]C:R{-1}C)"
 				End Sub		
-				
-			
-		
-	
+				// because the macro was recorded in "absolute" reference mode,
+				//    Excell interpreted your range selection as "absolute"
+
+			//notice no references to any specific cell ranges	
+
+	Macro Example: "Relative Reference"
+		Recording the Macro (again using the Sample.xlsm file or similar)
+			Developer Tab => "Use Relative References"
+			Select Cell A1 (Before Recording)
+			Developer Tab => Record Macro => Record Macro Menu
+				Name => "AddTotalRelative"
+				Save Location => "This Workbook"
+				=> OK
+			// at this point Excel is recording your actions
+			Select cell A16 and type "Total" in the cell
+			Select cell D16 and type "=COUNTA(D2:D15)"
+			Developer Tap => "Stop Recording"
+		Testing the Relative Macro
+			So the Relative Macro works when starting at A1 as expected,
+			but also works when started on F1 (Totaling the Data in column I)
+		Code Examination (Relative Reference Version)
+			// Again get to the Visual Basic Editor
+
+			Sub AddTotalRelative()
+				ActiveCell.Offset(15,0).Range ("A1").Select
+				ActiveCell.FormulaR1C1 = "Total"
+				ActiveCell.Offset(0,3).Range ("A1").Select
+				ActiveCell.FormulaR1C1 ="=COUNTA(R[-14]C:R[-1]C)"
+			End Sub
+			// note: no specific cell ranges
+			// ActiveCell.Offset tells the curser to move a certain number up/down and left/right
+		In Practice
+			to use this macro, just need to ensure
+				1. selected the correct starting cell
+				2. the data block has same number of rows and columns as the original data
+
+	Other Macro Recording Concepts
+		Macro Enabled File Extensions	
