@@ -114,4 +114,6 @@ Section Core JavaScript
 				x > y		// => false: "greater-than" operator
 				x >= y		// => false: "greater-than or equal-to" operator
 			Logical Operators
-
+				(x == 2) && (y ==3) 	// => true; && means "and"
+				(x > 3) || (y < 3) 	// => false; || means "or"
+				!(x == y)		// => true; ! "inverts" the bollean value
