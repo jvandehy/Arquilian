@@ -99,3 +99,19 @@ Section Core JavaScript
 				Arithmatic Operators
 					addition, subtration, multiplication, division
 				Concatonation
+			Shorthand Operators
+				var count = 0 	// defines the variable count
+				count++		// increments the variable count 
+				count--		// decrements the variable count
+				count += 2	// add to count (add 2 in this case)
+				count *= 3	// multiply count (multiply by 3 in this case)
+			Equality and Relational Operators
+				starting out with var x =2, y =3
+				x == y		// => false: "equality" operator
+				x != y		// => true: "inequality" operator
+				x < y		// => true: "less-than" operator
+				x <= y		// => true: "less-than or equal-to" operator
+				x > y		// => false: "greater-than" operator
+				x >= y		// => false: "greater-than or equal-to" operator
+			Logical Operators
+

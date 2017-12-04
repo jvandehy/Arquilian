@@ -169,4 +169,36 @@ Chapter 2 Introducing Visual Basic for Applications
 				2. the data block has same number of rows and columns as the original data
 
 	Other Macro Recording Concepts
-		Macro Enabled File Extensions	
+		Macro Enabled File Extensions
+			.xlsx can not contain macros
+			.xlsm can contain macros
+		Macro Security in Excel
+			Trusted Documents
+				"Enable Active Content" => "Trusted Document"
+		Trusted Locations
+			Developer Tab => "Macro Security" => "Trust Center Dialog Box" => "Trusted Locations" => Trusted Directories => New Location
+			Files in Trusted Locations Automatically have Macros Enabled
+		Personal Macro Workbook
+			"General Purpose Macros can be stored in the 'Personal Macro Notebook" instead of "This Workbook"
+		Assigning a Macro to a Button (and other Form Controls)
+			Form Controls - "You want to have a clear and easy way to run macros" => Form Controls
+				Different Types of Form Controls
+					Buttons
+					Scrollbars
+ 				Using  A Form Control in General
+					Place a Form Control on a Spreadsheet and then assign a macro to it.
+			Example: Creating a Form Control for "AddTotalRelative" Macro
+				Developer Tab => "Insert Button" => "Drop Down List" => "Button Form Control"
+				CLick Location on the sheet where you want the button => (Automatically Opens) "Assign Macro Dialog Box" => "AllTotalReRelative"
+			Assigning Other Form Controls to Macros: All the other Form Control Selections (besides "Button") are assigned the same way
+		Form Controls vs ActiveX controls
+			Form Controls are designed specifically for use on a spreadsheet.
+			ActiveX Controls are typically used on Excel User Forms
+			General Rule:
+				Use Form Controls when working on a spreadsheet
+					-because Form Controls use less "overhead", therefire they perform better
+		Quick Access Tool Bar
+			"you can also assign a macro to a button in Excels Quick Access Tool Bar"
+
+				
+				
