@@ -138,3 +138,20 @@ Section Core JavaScript
 
 			plus1(y)			// => 4 when y is 3		
 
+			Example (function square)
+			var square = function(x) {	//functions are values; can be assigned to variables
+				return x*x		// compute the function's value
+				};			// Semicolon marks the end of the assignment
+			
+			square(plus1(y))		// => 16; invoke two functions in one expression
+
+		Methods 
+			"When we combine functions and objects, we get methods"
+			"All javascript objects have methods"
+			
+			Example of Method
+			var a =[];			// create an empty array
+			a.push(1,2,3);			// the push() method adds elements to an array
+			a.reverse();			// another method: reverse order of the elements
+
+		Defining Methods
