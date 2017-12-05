@@ -117,3 +117,24 @@ Section Core JavaScript
 				(x == 2) && (y ==3) 	// => true; && means "and"
 				(x > 3) || (y < 3) 	// => false; || means "or"
 				!(x == y)		// => true; ! "inverts" the bollean value
+		Statements
+			"...an expression is something that computes a value, but doesn't do anything..."
+			"Statements ... don't have a value, but do alter a state ..."
+
+			Example of statments
+				variable declarations
+				assignment statements
+				control structures
+					conditionals
+					loops	
+		Functions
+			"A function is a named and parameterized block of code that you define once 
+			and can invoke over and over again."
+			
+			Example (function plus1)
+			function plus1(x) { 		// define a function named "plus1" with parameter "x"
+				return x+1;		// return a value one larger than the value passed in
+				}			// functions are enclosed in curly braces
+
+			plus1(y)			// => 4 when y is 3		
+
