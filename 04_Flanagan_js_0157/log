@@ -155,3 +155,8 @@ Section Core JavaScript
 			a.reverse();			// another method: reverse order of the elements
 
 		Defining Methods
+			points.dist = function() {	// define a method to determine distance betwn points
+			var p1 = this[0]		// first element of array we're invoked on
+			var p2 = this[1]		// second element of array we're invoked on
+
+			
