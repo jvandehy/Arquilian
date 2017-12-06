@@ -92,10 +92,24 @@ Section Expressions in SELECT Statements
 			PRODUCT_ID,
 			DESCRIPTION,
 			PRICE,
-			PRICE * 1.07 AS TAXED_PRICE
+			PRICE * 1.07 AS TAXED_PRICE  	// PRICE is multiplied by 1.07 to calculate TAXED_PRICE
+							// we gave the calcluated value a name using an AS statement
+							// AS statements give aliases
 			FROM PRODUCT;
+		// notice in the SELECT statement that we can spread our SQL across multiple lines to make it more readible
 		Result (partial)
 			PRODUCT_ID	DESCRIPTION	PRICE		TAXED_PRICE
 			1		Copper		7.51		8.0357
 			2		Aluminum	2.58		2.7606
 			3		Silver		15		16.05 	
+		// the TAXED_PRICE column was dynamically calculated in the SELECT query
+		// the TAXED_PRICE column is not stored i n the table, but calculated and displayed every time we run query
+	
+	Aliases
+		Assigned by AS statements
+		We can use AS statements to 
+			give names to expressions
+			apply a new name to an existing column within the query
+		
+	"Keep the stored data simple and use queries to layer calculations on top of it"
+
