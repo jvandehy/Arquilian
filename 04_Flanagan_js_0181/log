@@ -158,5 +158,24 @@ Section Core JavaScript
 			points.dist = function() {	// define a method to determine distance betwn points
 			var p1 = this[0]		// first element of array we're invoked on
 			var p2 = this[1]		// second element of array we're invoked on
+			var a = p2.x-p1.x;		// difference in X coordinates 
+			var b = p2.y-p1.y;		// difference in Y coordinates
+			return Math.sqrt(a*a + b*b)	// the pythagorean theorum
+							// Math.sqrt() computes the square root
 
-			
+		Functions with Control Structure Statements
+			Example 
+			function abs(x) {		// a function to compute the absolute value
+				if (x >= 0) {		// The if statement
+					return x;	// executes this statement if the comparison is true
+				}			// this is the end of the clause
+					else {		// the optional else clause executes its code if the comparison is false
+					return -x;	
+					}
+				}
+
+			Example
+			function factorial(n) {		// a function to compute factorials
+				var product =1;		// start with a product of 1
+				while(n>1) {		//repeat statements in {} while expression in () is true
+					product *=n;				
