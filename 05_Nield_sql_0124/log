@@ -111,5 +111,14 @@ Section Expressions in SELECT Statements
 			give names to expressions
 			apply a new name to an existing column within the query
 		
-	"Keep the stored data simple and use queries to layer calculations on top of it"
+	Calculations - "Keep the stored data simple and use queries to layer calculations on top of it"
 
+	Rounding
+		Instead of 
+		PRICE * 1.07 AS TAXED_PRICE
+		use
+		round(PRICE * 1.07, 2) AS TAXED-PRICE
+	
+	Concatination
+		"Concatination merges two or more pieces together"
+		Example
