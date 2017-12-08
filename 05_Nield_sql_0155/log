@@ -119,23 +119,39 @@ Section Expressions in SELECT Statements
 		use
 		round(PRICE * 1.07, 2) AS TAXED-PRICE
 	
-	Concatination
-		"Concatination merges two or more pieces together"
-		Example
-			NAME			CITY		STATE
-			LITE Industrial		Irving        	TX
-			Rex Tooling		DallaS  	TX
-			Re-Barre Construction	Irving		TX
+Section Text Concatination
+	"Concatination merges two or more pieces together"
+	Example
+		NAME			CITY	STATE 	ZIP
+		LITE Industrial		Irving  TX	75014
+		Rex Tooling		DallaS  TX	75201
+		Re-Barre Construction	Irving	TX	75032
 
-		Query:
+	Query:
 
-		SELECT NAME,
-		CITY || ',' || STATE AS LOCATION
-		FROM CUSTOMER
+	SELECT NAME,
+	CITY || ',' || STATE AS LOCATION
+	FROM CUSTOMER
 			
-		Query Result:	
+	Query Result:	
 			
-			NAME			LOCATION
-			LITE Industrial		Irving, TX
-			Rex Tooling		DallaS, TX
-			Re-Barre Construction	Irving, TX
+		NAME			LOCATION
+		LITE Industrial		Irving, TX
+		Rex Tooling		DallaS, TX
+		Re-Barre Construction	Irving, TX
+		
+	Example concatination of numbers
+	Query:
+	SELECT NAME,
+	CITY || ',' || STATE || ',' || ZIP AS LOCATION	
+	FROM CUSTOMER;
+
+	// Concatination should work with any data type (numbers, dates, etc)
+		and treat it as text when merging. ("implicit converstion")
+
+Chapter 5 Where
+	Where Statements
+	"A very common task when working with data is filtering for records based on criteria,
+	which can be done by WHERE statements."
+
+		FROM CUSTOMER;
