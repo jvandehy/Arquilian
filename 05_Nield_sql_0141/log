@@ -122,3 +122,20 @@ Section Expressions in SELECT Statements
 	Concatination
 		"Concatination merges two or more pieces together"
 		Example
+			NAME			CITY		STATE
+			LITE Industrial		Irving        	TX
+			Rex Tooling		DallaS  	TX
+			Re-Barre Construction	Irving		TX
+
+		Query:
+
+		SELECT NAME,
+		CITY || ',' || STATE AS LOCATION
+		FROM CUSTOMER
+			
+		Query Result:	
+			
+			NAME			LOCATION
+			LITE Industrial		Irving, TX
+			Rex Tooling		DallaS, TX
+			Re-Barre Construction	Irving, TX
