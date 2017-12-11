@@ -55,5 +55,49 @@ Part 2 Coure Constructs and Techniques of the Language
 Chapter 4 - Basic Constructs and Elementary Data Types
 Section 4.1 Filenames - Keywords - Identifers 
 Section 4.2 Basic Structure and Components of a Go Program
- 
-						
+	Packages - "Packages are a way to structure code: a program is constructed as a "package" 
+			which may use facilities from other packages."
+	Standard Library
+	Importing - "A go program is created by linking together a set of packages through the import keyword."
+	"Factoring the Keyword"
+		import (		// The Keyword
+			"fmt"		// The Factors
+			"os"
+			)			
+		
+		instead of 
+		import "fmt"; import "os"
+	Discussion of the Compile Process
+		"To build a program, the packages and the files within them, must be compliled in the right order."
+		"Within a package, the source files must all be compiled together"
+		"Import loads the public declarations from the complied package, it does not insert the source code."
+	VIsibility Rule
+		"When the identifier starts with Uppercase letter, then the 'object' with this identifier is 'visible outside the package'".
+		" ... and is sead to be exported"
+	Dot notation
+		if Thing is a variable (or function ) from package pack1, then Thing can be called with pack1.Thing 
+	Namespaces
+		basically this means that pack1.Thing is completely different from pack2.Thing .  
+	Package alias 
+		A package can be given another name (an alias).
+		Example of a package alias:
+			package main
+			import fm "fmt"   // this gives the alias fm to the package fmt
+			func main() {
+			fm.Println("hello, world")	// insterad of fmt.Println("hello, world")
+			}
+	Package Level Declarations and Initializations
+
+			package main			// package declatation
+			import (			// import declarations
+				"fmt"
+				"os"
+				)	
+			const a int			// contant declaration; package level scope
+			var b bool			// variable declarations; package level scope
+			type cat string			// type declaration; package level scope
+	Functions	
+		Function General Format:
+			Simplist Function:	func functionName() 	
+			// between the (), no, one or more parameters can be given as input to the function
+			

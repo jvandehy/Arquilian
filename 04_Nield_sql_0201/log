@@ -154,4 +154,48 @@ Chapter 5 Where
 	"A very common task when working with data is filtering for records based on criteria,
 	which can be done by WHERE statements."
 
-		FROM CUSTOMER;
+Section Filtering Records
+Section Using WHERE on NUmbers
+	Example
+		SELECT * FROM station_data
+		WHERE year = 2010;
+
+	Example
+		SELECT * FROM staion_data
+		Where year != 2010
+
+	Example 
+		SELECT * FROM station_data
+		WHERE year BETWEEN 2005 and 2010
+
+Section And, Or and In Statements
+	Example
+		SELECT * FROM station_data
+		WHERE year >= 2005 AND year <= 2010
+
+	Example 
+		SELECT * FROM station_data
+		WHERE MONTH =3
+		OR MONTH = 6
+		OR MONTH = 9
+		OR MONTH = 12
+	
+	Example
+		SELECT * FROM station_data
+		WHERE MONTH IN (3,6,9,12)
+
+	Example 
+		SELECT * FROM station_data
+		WHERE MONTH NOT IN (3,6,9,12)
+
+	Example
+		SELECT * FROM station_data
+		WHERE MONTH %3 =0    // that is, 3,6,9,12		
+	
+Section Using WHERE on Text
+	"...when using text, you must wrap literals (text values you specify) in quotes."
+	Example
+		SELECT * FROM station_data
+		WHERE report_code = '513A63'   // report_code field is text
+
+	Single Quote Rule: "If a field is text, we need to put single quotes around the spcified text."		
