@@ -100,4 +100,21 @@ Section 4.2 Basic Structure and Components of a Go Program
 		Function General Format:
 			Simplist Function:	func functionName() 	
 			// between the (), no, one or more parameters can be given as input to the function
+		"func main() will always be first function called AND the program exits when main returns."
+		Schematic General Function
+			func funcName() (parameter_list) (return_value_list) {
+					...
+				}      // where paramenter list is (param1 type1,param2 type2,...)
+					// return_value_list is (ret1 type1, ret2 type2,...)
+	Example
+		package main
+		import (
+			"fmt"
+			)
+		func main() {
+		fmt.Println("hello, world") // calls the function Println from the package fmt,
+		}				// which prints the string-parameter to the console,
+						// followed by a newline-character \n
+		
+
 			
