@@ -72,7 +72,8 @@ Section 4.2 Basic Structure and Components of a Go Program
 		"Within a package, the source files must all be compiled together"
 		"Import loads the public declarations from the complied package, it does not insert the source code."
 	VIsibility Rule
-		"When the identifier starts with Uppercase letter, then the 'object' with this identifier is 'visible outside the package'".
+		"When the identifier starts with Uppercase letter, then the 'object' with
+			 this identifier is 'visible outside the package'".
 		" ... and is sead to be exported"
 	Dot notation
 		if Thing is a variable (or function ) from package pack1, then Thing can be called with pack1.Thing 
@@ -115,6 +116,29 @@ Section 4.2 Basic Structure and Components of a Go Program
 		fmt.Println("hello, world") // calls the function Println from the package fmt,
 		}				// which prints the string-parameter to the console,
 						// followed by a newline-character \n
+	Package Comments
+		"Every package should have a Package comment
+			a block comment immediately proceding the package statement,
+			introducing the package and providing information relevant
+			to the package and its functionality as a whole."
+		"A package can be spread over several files, but the package comment needs only to be in one of them"
+		"This comment is shown when a developer demands info of the package with godoc.
+	Doc Comments
+		"Nearly every top-level type, const, var and func and every exported namee in 
+			a program should have a comment"
+		"Doc comments appear on the proceding line"
+		"Doc comments should start with the name of the thing being commented on"
+	Types (short for "data-type")
+		"A type defines the set of values and the set of operations that can take place on those values"
+	Elementary Types (a.k.a. Primitive Types):
+		int
+		float
+		bool
+		string 
+	Structured Types (a.k.a Composite Types):
+		struct
+		array
+		slice
+		map
+		channel
 		
-
-			
