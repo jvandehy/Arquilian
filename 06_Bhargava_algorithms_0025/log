@@ -1,0 +1,25 @@
+This is the log for Aditya Bhargava's 2016 Book "Grokking Algorithms" (Manning)
+Copyright Page
+Table of Contents
+Preface
+Acknowledgements
+About this Book
+Chapter 1 Introduction to Algorithms
+	Algorithm => An algorithm is a set of instructions for accomplishing a task
+	Highlights
+		Binary Search
+		Graph Alorithm (GPS device)
+		Dynamic Programming
+	What you will learn about solving problems
+		Examples:
+		Graph Alogrithms (Video Game)	
+			"you can write an AI system that follows the user around using graph algorithms"
+		"k-nearest neighbors" (Recommendations)
+		NP-complete problems
+			"shows you how to identify those problems that come up with an algorithm that
+				gives you an approximate answer"
+		Know widely applicable algorithms (New Knowledge)
+			algorithms for:
+				AI
+				databases
+				bigger challenges
