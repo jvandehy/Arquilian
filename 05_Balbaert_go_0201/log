@@ -141,4 +141,62 @@ Section 4.2 Basic Structure and Components of a Go Program
 		slice
 		map
 		channel
+	Interfaces ("which only describe the behavior of a type")
+	Function type
+		"A functions type is the type of the variable returned by the type"
+		General form is 
+			func FunctionName (a typea, b typeb) typeFunc
+			or
+			func FunctionName (a typea, b typeb) (t1 type1, t2 type2) // for more than one rturn value
+		Example
+			func Atoi (s string) (i int, err error)
+	Define type
+		"Use the keyword type for defining your own type"
+			Struct-types are defined this way
+			or Alias existing type
+	Alias example
+		type IZ int 
+		var a IZ = 5 // a has int as the underlying type
 		
+		"Factored Keyword form" (again!)
+		type (
+			IZ int
+			FZ float
+			STR string
+		     )
+	General Program Structure
+		Package declaration
+		Import declaration
+		Constants / Variables / Types declared
+		"Init" function (if any) // init function is "special function" that is executed first
+		main() function (only in package main)
+		the rest of the functions
+			methods on types first
+			or the functions in order of how they are called in main() onwards
+			or methods and functions alphabetically if the number of functions is high
+	
+		Example:
+			package main
+			import (
+				"fmt"
+				)
+			const c = "C"
+			var v int = 5
+			type T struct{}
+			func init() {		// initialization of package
+			}
+			func main() {
+				var a int
+				Func1()
+				//...
+				fmt.Println(a)
+				}
+			func(t T) Method() {
+				//...
+				}
+			func Func1() { 		// exported function Func1
+				//...
+				}
+	Order of Execution (program start up)
+		1. all packages in package main are imported in the order indicated, in every package.
+
