@@ -42,3 +42,28 @@ Chapter 1 Introduction to Algorithms
 			100=>50=>25=>13=>7=>4=>2=>1  7 steps.
 		How many steps max?
 			"In General, for any list of n, binary search will take log2 n steps to run the worse case.
+			Example n=8;
+			log 8 == 3 since 2*2*2 = 8 // (here log base 2) 
+			so for a list of 8 numbers you would have to check 3 numbers at most.
+
+			Example n = 1024   log base 2 of 1024 = 2*2*2*2*2*2*2*2*2*2  so the log is 10.
+		Example using Python
+			// The binary search function takes a sorted array and an item.
+			// If the item is in the array, the function returns its position
+			// You'll keep track of what part of the array you have searched through.
+
+			1  low = 0
+			2  high = len(list) -1
+
+				LOW                                                 HIGH
+				[ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] 
+				    (These are the numbers we are searching through)
+
+			// each time, you check the middle element:
+			mid = (low + high) /2     // mid is rounded down by Python automatically if
+						  // (low + high) isnt an even number
+			guess = list[mid] 
+			// if guess is too low, you update low accordingly
+			if guess < item
+			   low = mid +1
+			// if guess is too high, you update high
