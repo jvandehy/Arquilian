@@ -29,4 +29,16 @@ Chapter 1 Introduction to Algorithms
 		solution: Binary Search
 		
 		Binary Search is an algorithm
-			input
+			input - a sorted list of elements
+			output - postion where its located
+				or null
+		Example: Guess a number between 1 and 100 where you are told if too high or too low.
+			Technique	Result
+			Guess 50 	"Too Low"	// you just eliminated half of the numbers.
+			Next Guess 75	"Too High"	// again you eliminate half of the remaining numbers
+			Then Guess 63	"Too High"
+
+		Generally with binary search, you eliminate half the possibilities each step
+			100=>50=>25=>13=>7=>4=>2=>1  7 steps.
+		How many steps max?
+			"In General, for any list of n, binary search will take log2 n steps to run the worse case.
