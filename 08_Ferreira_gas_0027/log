@@ -1,0 +1,28 @@
+This is the log for Bruce Ferreira's 2014 book "Google Apps Script:Web Applications Development Essentials, 2nd Ed"
+Preface
+	Google Apps Script "a service which runs from Google Apps, Sites and Documents"
+	Uses:
+		Automates day-to-day tasks for speadsheets
+		Provides a complete application platform
+		Can create "entire data driven websites and applications' 
+			that "run across most modern browsers".
+	Features:
+		Integrated Development Environment (IDE)
+		Scripts Manager
+		Built in DeBugging
+		Automatic Code Completion
+		Timed Event Triggers
+		Automated Revisions
+		Web based 
+		
+	Google Apps Script is the "Swiss Army Knife" behind the main Google Products.
+	Apps Script vs App Engine 
+		App Engine - requires a place for you to develop and deploy your code
+		Apps Script - you build code intoexisting Google platform
+	Communication:
+		"Apps Script can communicate through:
+			JDBC
+			JSON
+			SOAP
+			urlFetch method 
+
