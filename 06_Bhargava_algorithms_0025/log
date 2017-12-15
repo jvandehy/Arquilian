@@ -23,3 +23,10 @@ Chapter 1 Introduction to Algorithms
 				AI
 				databases
 				bigger challenges
+	Binary Search
+		senerio: Facebook needs to find username
+		"This is a search problem"
+		solution: Binary Search
+		
+		Binary Search is an algorithm
+			input
