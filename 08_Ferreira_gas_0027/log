@@ -25,4 +25,8 @@ Preface
 			JSON
 			SOAP
 			urlFetch method 
+		HTML Service
+			"HTML service gives Google Apps Script programmers the ability to build custom
+				user interfaces that can run inside a spreadsheet window as a 
+				Google gadget or completely independently in a browser"
 
