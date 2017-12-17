@@ -33,3 +33,19 @@ Preface
 		"This book will focus on teaching you how to build powerful web applications using Google Apps Scripts"
 
 	Google Web Toolkit ( a more advanced and complicated supject)
+Chapter 1 "First Steps in Google Apps Script"
+	"Google Apps Script is
+		a coding and application development platform
+			built into Google Apps"
+	"Google Apps Script allows youto add functionality to
+		spreadsheets
+		Gmail
+		Sites
+		other services"
+	"Focus on the concept of using Google Apps Script to
+		build apps that run from
+			a spreadsheet
+			a browser window
+			within a google site
+	User Interfaces in Google Apps Script
+			
