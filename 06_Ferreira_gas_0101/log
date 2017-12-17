@@ -1,0 +1,101 @@
+This is the log for Bruce Ferreira's 2014 book "Google Apps Script:Web Applications Development Essentials, 2nd Ed"
+Preface
+	Google Apps Script "a service which runs from Google Apps, Sites and Documents"
+	Uses:
+		Automates day-to-day tasks for speadsheets
+		Provides a complete application platform
+		Can create "entire data driven websites and applications' 
+			that "run across most modern browsers".
+	Features:
+		Integrated Development Environment (IDE)
+		Scripts Manager
+		Built in DeBugging
+		Automatic Code Completion
+		Timed Event Triggers
+		Automated Revisions
+		Web based 
+		
+	Google Apps Script is the "Swiss Army Knife" behind the main Google Products.
+	Apps Script vs App Engine 
+		App Engine - requires a place for you to develop and deploy your code
+		Apps Script - you build code intoexisting Google platform
+	Communication:
+		"Apps Script can communicate through:
+			JDBC
+			JSON
+			SOAP
+			urlFetch method 
+		HTML Service
+			"HTML service gives Google Apps Script programmers the ability to build custom
+				user interfaces that can run inside a spreadsheet window as a 
+				Google gadget or completely independently in a browser"
+	Web Applications
+		"This book will focus on teaching you how to build powerful web applications using Google Apps Scripts"
+
+	Google Web Toolkit ( a more advanced and complicated supject)
+Chapter 1 "First Steps in Google Apps Script"
+Section 1 Google Apps Script is...
+	"Google Apps Script is
+		a coding and application development platform
+			built into Google Apps"
+	"Google Apps Script allows youto add functionality to
+		spreadsheets
+		Gmail
+		Sites
+		other services"
+	"Focus on the concept of using Google Apps Script to
+		build apps that run from
+			a spreadsheet
+			a browser window
+			within a google site
+	User Interfaces in Google Apps Script
+		Ways to create user interfaces
+			UiApp Service (older) 
+			"gadgets" for google sites
+			HTML service
+		UiApp Service 
+			"User Interface	App"
+			released in 2010 as a way to allow developers to collect input
+			input was then sent to the script for processing
+			UiApp uses the Google Web Toolkit (GWT) widget set
+			Widgets allow you to create things like 
+				text boxes and submit buttons	
+				flextables and listboxes
+			UiApp will not be receiving updates - USE HTML INSTEAD!
+		HTML Service
+			HTML, CSS and javascript
+Section "What You Will Get From This Book"
+	Learn all the necessary elements that go into building web applications with GAS.
+Section "Getting Started"
+	Google Script Editor Window
+		Google Drive => "Create" => "Script"=> Google Script Editor Window				
+	Selected Menu Comments
+		"File" Submenus 
+		    Save/Delete/Rename/New "typical"
+		    Manage Versions
+			"turn back the clock"
+			also allows you to control which version users are accessing
+		    Project Properties
+			store information for use at script runtime
+			also available by using "Properties Service" in the code
+		"Edit" Submenu
+		    "nothing very exciting"
+		"View" Submenu
+		    Execution
+		    Transcript
+			Execution Transcript will list each command as it is run
+				the order the code is executed in (for debugging)
+		    Logs (used with the "Logger Service")
+			Example of using Log:
+			    1. Add to Script Editor
+				function myFunction(){
+		    		Logger.log('A test of the Log');
+				}
+	    		    2. Click Run
+	    		    3. Check the Logs (View => Logs)
+				it worked!
+		"Run" Submenu
+		"Publish" Submenu
+		    "Deploy as web app"
+			- makes displaying a User Interface possible
+			- also the place for distributing on the Google Chrome Web Store.
