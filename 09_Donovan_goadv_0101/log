@@ -1,0 +1,101 @@
+This is the log for Alan A. A. Donovan's 2015 book "The Go Programming Language"
+About this E-Book
+Copyright Page
+Table of Contents
+Preface
+Chapter 1 Tutorial
+Section 1.1 Hello, World
+Section 1.2 Command Line Arguments
+	Input comes from:
+		Internal Source (some programs generate their own data)
+		External Source:
+			A File
+			A Network Connection
+			OutPut From Another Program
+			A User At A Keyboard
+			Command Line Arguments
+	Command Line Agruments
+		Args	is a variable
+			part of the os package	
+			its name outside of the os package is os.Args
+			os.Args is a slice of strings
+			os.Args[0] is always the name of the command itself
+	Echo1 Program
+		//	Echo1 prints its command-line arguments
+		package main
+
+		import (
+			"fmt"
+			"os"
+		)
+
+		func main() {
+			var s, sep string
+			for i :=1; i<len(os.Args); i++ {
+				s += sep + os.Args[i]
+				sep =""
+			} 
+			fmt.Println(s)
+		}
+		
+		// += is an "assigment operator"; it concatenates and assigns back to s
+		// loop is of general structure for initialization; condition; post {
+		//					zero or more statements
+		//					}
+		//		here initialization must be a simple statement:
+		//								a short variable declaration
+		//								an increment
+		//								assignment statement
+		//								
+		//		here condition is boolean
+
+	Echo2 Program
+		// Echo2 prints its command-line arguments.
+
+		package main
+
+		import (
+			"fmt"
+			"os"
+		)
+
+		func main() {
+			s, sep := "", "" 		    // use a short variable declaration to declare and initialize s and sep
+			for _, arg := range os.Args[1:] {   // In each iteration of the loop, range produces a pair of values
+							    //     :the index and the value at that index (the index is a blank identifier)
+				s += sep + arg 		    // each time around the loop, the string gets completely new contents
+							    // the += statement makes a new string by concatinating 
+							    //     the old string, a space charater, and the next argument
+							    //     and then assigns the new string to s
+						            // The old contents of s are no longer in use => "garbage collection"
+				sep = " "
+			} 
+			fmt.Println(s) 
+		}
+		// A form of the for loop iterates over a range of values from a data type like a string or a slice.
+
+	Blank Identifier is used whenever syntax requires a variable name, but program logic does not. 
+
+	Implicit indexing vs Explicit Indexing
+		the loop in Echo 2 is implicit  _, arg := range os.Args[1:]  "easier to get right" 
+		remember, os.Args[1:] is a slice, so the declaration here gives an index (of the slice) and the value
+
+	Many ways to declare a string variable:
+		s := ""			// "short variable declaration" ; most compact; limited to use within a function
+		var s string		// commonly used when short variable declaration inst allowed
+		var s = ""		// rarely used except when declaring multiple variables
+		var s string = ""	// redundant
+
+	Echo3 Program
+		"A simpler and more efficient solution would be to use the join function from the strings package."
+		// Echo3 pronts out its command-line arguments
+
+		package main
+		
+		import (
+			"fmt"
+			"os"
+			"strings"
+	        	)
+		
+		func main() {

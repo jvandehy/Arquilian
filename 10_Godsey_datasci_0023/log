@@ -1,0 +1,23 @@
+ This is the log for Brian Godsey's 2017 book "Think Like a Data Scientist"
+About this Book
+	Data Science is a new field whose components are "well established"
+		Components:
+			Statistics
+			Software Development
+			Evidence Based Problem Solving
+			
+	Blurry lines between Data Science and other related fields
+		Related Fields
+			Database Architecture
+			Big Data Engineering
+			Machine Learning
+			High performance Computing
+
+	"Core" of Data Science
+		"the interplay between 
+			data content, 
+			the goals of a given project and 
+			the data-analytic methods used
+	Management the Core with "any software necessary" where the software 
+		and how to implement it are details.	
+		"software as a necessary set of tools, like test tubes, flasks and bunson burners" 
