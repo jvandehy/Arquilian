@@ -64,4 +64,14 @@ Part 1 Philosophies of Data Science
 1.1 Data Science and this Book
 	Origins of data science "somewhere between statistics and software development"
 
+	Data Sciences (Three Components)
+		Statistics
+		Softwarew
+		Subject Matter Expertise / Domain Knowledge
+			Maybe not such a big deal
+			This takes the least of the three to learn well
 
+	Issues in Data Science Projects:
+		Data Quality
+		Data Volume
+		
