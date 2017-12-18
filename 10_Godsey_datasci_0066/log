@@ -1,0 +1,67 @@
+ This is the log for Brian Godsey's 2017 book "Think Like a Data Scientist"
+About this Book
+	Data Science is a new field whose components are "well established"
+		Components:
+			Statistics
+			Software Development
+			Evidence Based Problem Solving
+			
+	Blurry lines between Data Science and other related fields
+		Related Fields
+			Database Architecture
+			Big Data Engineering
+			Machine Learning
+			High performance Computing
+
+	"Core" of Data Science
+		"the interplay between 
+			data content, 
+			the goals of a given project and 
+			the data-analytic methods used"
+		"applying the scientific method to data sets in order to acheive progect goals" 
+	Management the Core with "any software necessary" where the software 
+		and how to implement it are details.	
+		"software as a necessary set of tools, like test tubes, flasks and bunson burners" 
+		"Focus always returns to the key concepts and challenges that are unique to 
+		    each project in data science, and the n process of organizing and harnessing available
+		    resources and information to achieve project goals"
+	Roadmap
+		Process-Oriented Perspective of data science projects
+	Preparation Phase
+		Setting up good goals
+			practical questions to address
+			data's ability to address those questions
+		Exploration Phase 
+			data discovery
+			data access
+			choice of data sources
+		Data Wrangling
+			raw data is brought to usefulness
+		Data Assessment
+			preliminary examinations
+	Building Phase
+		Develop a Plan
+			Planning for Uncertainty
+		Statistics
+			Concepts, Tools, Methods
+		Statistical Software
+		Software Tools (High Level Overview)
+		Execution of Project Plan
+	Finishing Pahse
+		Conveying Results to Customer
+	Post Delivery
+		Bugs, Training of Customer, refinements
+	Lessons Learned
+
+Part 1 Philosophies of Data Science
+
+1.0 Overview
+	"Data science as a set of processes and concepts that act as a guide for making progress and decisions
+	    within a data-centric project"
+	"The thought processes of a data scientist can be more important than the specific tools used"
+	"Certain concepts pervade nearly all aspects of work in data science"
+
+1.1 Data Science and this Book
+	Origins of data science "somewhere between statistics and software development"
+
+
