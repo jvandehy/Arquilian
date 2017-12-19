@@ -233,4 +233,12 @@ a					boolean
 	    that is built into the language
 		[x] true
 		[ ] false
-
+	8. In Go, an "int" is a primitive data type.
+		[x] true
+		[ ] false
+	9. In Go, a "string" is a primitive data type.
+		[x] true
+		[ ] false
+	10. A "composite" data type allows you to compose together values of other data types.
+		[x] true
+		[ ] false
