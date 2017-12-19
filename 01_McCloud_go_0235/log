@@ -186,11 +186,10 @@ a					boolean
 			a. use conversion to convert the type of the value stored in "x" to the underlying
 			type
 			b. then use the "=" operator to assign that value to "y"
-			c. pront out the value stored in "y"
+			c. print out the value stored in "y"
 			d. print out the type of "y"
 	Solution:
 		package main
-
 		import (
 			"fmt"
 			)
@@ -200,7 +199,38 @@ a					boolean
 		var y int
 
 		func main () {
-			fmt.Printf("%v%v\n%v%T\n","the value is ",x,"the type is ",x)
 			x = 42
-			fmt.Printf("%v",x)
-			}			
+			y = int(x)
+			fmt.Printf("%v%v\n%v%T\n","the value of y is ",y,"the type of y is ",y)
+			}
+			
+	Hands on Exersize #6: Take this Quiz
+
+	1. The smallest stand alone element of a program tha expresses some action to be carried out.
+		[x] statement
+		[ ] expression
+	2. A combination of one or more explicit values, constants, variables, operators, and functions
+	    that the programming language interprets and computes to produce another value.
+		[ ] statement
+		[x] expression
+	3. Which are "parentheses" or "parens"
+		[x] ()
+		[ ] {}
+		[ ] []
+	4. Which are "curly braces" or "curlies" or "braces"
+		[ ] ()
+		[x] {}
+		[ ] [] 
+	5. Which are "brackets".
+		[ ] ()
+		[ ] {}
+		[x] []
+	6. The scope of the variable is where you can access the variable, eg write to it or read the 
+	    value from it.
+		[x] true
+		[ ] false
+	7. A "primitive" data type is one that is built into the language and/or just a basic data type 
+	    that is built into the language
+		[x] true
+		[ ] false
+

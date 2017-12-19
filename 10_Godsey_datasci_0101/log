@@ -74,4 +74,29 @@ Part 1 Philosophies of Data Science
 	Issues in Data Science Projects:
 		Data Quality
 		Data Volume
+		Processing Speed
+		Algorithm Parameters
+		Interpretability
 		
+		"No important aspect goes unnoticed"
+
+1.2 Awareness is Valuable		
+
+	Awareness
+		"A data scientist's main responsibility is to try to imagine all of the possibilities, 
+		    address the ones that matter, and reevaluate them all as successes and failures happen"
+		"That is why ... awareness and familiarity with uncertainty are the most valuable
+		    things I can offer as a data scientist."
+		"...imagination can be a data scientist's best friend"
+
+1.3 Developer vs Data Scientist
+
+	Software Developer "develop systems of well-defined components"		
+	Data Scientist "work with systems where at least one of the components isn't well defined prior 
+		to being built" (and that component is usually closely involved with data processing or analysis)
+	Probabilistic
+		Data scientists specialize in creating systems that rely on probabilistic statements 
+		    about data and results.
+		Data scientists answer questions that involve data exploration and uncertainty.
+		Exploration - necessarily involving statistics - falls squarely in the realm of the data scientist.
+
