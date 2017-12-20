@@ -242,3 +242,12 @@ a					boolean
 	10. A "composite" data type allows you to compose together values of other data types.
 		[x] true
 		[ ] false
+	11. When a variable is declared in Go using the "var" keyword, and no value is assigned to that 
+	    variable, then the compiler assigns a default value to the variable. This is known as the
+	    "zero value".
+		[x] true
+		[ ] false
+	12. Keywords are words that are reserved for use by the Go programming language; they have to 
+	    be used in a certain way for a certain purpose.
+		[x] true
+		[ ] false
