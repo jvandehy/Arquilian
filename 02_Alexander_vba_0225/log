@@ -176,7 +176,8 @@ Chapter 2 Introducing Visual Basic for Applications
 			Trusted Documents
 				"Enable Active Content" => "Trusted Document"
 		Trusted Locations
-			Developer Tab => "Macro Security" => "Trust Center Dialog Box" => "Trusted Locations" => Trusted Directories => New Location
+			Developer Tab => "Macro Security" => "Trust Center Dialog Box" => "Trusted Locations" 
+			    => Trusted Directories => New Location
 			Files in Trusted Locations Automatically have Macros Enabled
 		Personal Macro Workbook
 			"General Purpose Macros can be stored in the 'Personal Macro Notebook" instead of "This Workbook"
@@ -189,8 +190,10 @@ Chapter 2 Introducing Visual Basic for Applications
 					Place a Form Control on a Spreadsheet and then assign a macro to it.
 			Example: Creating a Form Control for "AddTotalRelative" Macro
 				Developer Tab => "Insert Button" => "Drop Down List" => "Button Form Control"
-				CLick Location on the sheet where you want the button => (Automatically Opens) "Assign Macro Dialog Box" => "AllTotalReRelative"
-			Assigning Other Form Controls to Macros: All the other Form Control Selections (besides "Button") are assigned the same way
+				CLick Location on the sheet where you want the button => (Automatically Opens) 
+	    			    "Assign Macro Dialog Box" => "AllTotalReRelative"
+			Assigning Other Form Controls to Macros: All the other Form Control Selections (besides 
+			    "Button") are assigned the same way
 		Form Controls vs ActiveX controls
 			Form Controls are designed specifically for use on a spreadsheet.
 			ActiveX Controls are typically used on Excel User Forms
@@ -198,7 +201,26 @@ Chapter 2 Introducing Visual Basic for Applications
 				Use Form Controls when working on a spreadsheet
 					-because Form Controls use less "overhead", therefire they perform better
 		Quick Access Tool Bar
-			"you can also assign a macro to a button in Excels Quick Access Tool Bar"
-
-				
+			"You can also assign a macro to a button in Excels Quick Access Tool Bar"
+			Add a custom button that will run your macro by
+				1. Right Click the "Quick Access Tool Bar" => "Customize Quick Access Toolbar"
+				2. This opens the Dialog Box. Click the "Quick Access Toolbar Button" on the left of
+				    the Excel Options dialog box.
+				3. "Choose Commands" => "Macros". 
+				4. Select the Macro you want to add and click the "Add" button
+				5. Change the icon by clicking the modify button
+				6. Click "OK"
+	Working with the Visual Basic Editor
+		A Seperate Application
+			Visual Basic Editor is actually a seperate application that runs when you open Excel
+		Activation of the Visual Basic Editor:
+			1. Alt +F11 (when Excel is active)
+			2. Devloper Tab => "Visual Basic"
+		Understanding VBE Components
+			Menu Bar
+			Toolbar
+			Project Window
+			Properties Window
+			Code Window
+			Immediate Window
 				

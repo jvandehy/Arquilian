@@ -251,3 +251,53 @@ a					boolean
 	    be used in a certain way for a certain purpose.
 		[x] true
 		[ ] false
+	13. Keywords are sometimes called "reserved words"
+		[x] true
+		[ ] false
+	14. You can't use a keyword for anything other than its purpose.
+		[ ] true
+		[x] false
+	15. In "2 + 2" the "+" is the operator
+		[x] true
+		[ ] false
+	16. In "2 + 2" the "2"s are the operands 	
+		[x] true
+		[ ] false
+	17. For finding documentation, what is the difference between documentation found at golang.org
+	    and godoc.org?
+		A: godoc.org has documentation form the standard library and third parties, but golang.org
+	    	only has th standard libray documentation
+	18. "package" is a key word
+		[x] true
+		[ ] false
+	19. "var is a keyword.
+		[x] true
+		[ ] false
+	20. The entry point for all programs is func main() which needs to be inside package main
+		[x] true
+		[ ] false
+	21. The "short declaration operator" can be used anywhere in a program, including at both
+	    package level and the block level		
+		[ ] true
+		[x] false
+	22. What are the three words used to describe good package names in ther "effective go" document?
+		[x] descriptive
+		[ ] short
+		[x] concise
+		[x] evocative
+	23. What is the nanme of the website where you can write (most) Go code online and have it run online?
+		A: play.golang.org
+	24. A great place to ask questions is the "golang bridge forum" at https://forum.golangbridge.org/
+		[x] true
+		[ ] false
+	25. When you see something like "fmt.Println()" this is calling the "Println()" function from the "fmt" package.
+		[x] true
+		[ ] false
+	26. An identifier is the name assigned to a variable or a function or constant
+		[x] true
+		[ ] false
+	27. To call a func, variable or constant from a package, use the "package-dot-identifier" syntax.
+	    For example, like this, "fmt.Println()"
+		[x] true
+		[ ] false
+
