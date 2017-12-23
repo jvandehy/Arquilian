@@ -212,15 +212,39 @@ Chapter 2 Introducing Visual Basic for Applications
 				6. Click "OK"
 	Working with the Visual Basic Editor
 		A Seperate Application
-			Visual Basic Editor is actually a seperate application that runs when you open Excel
+		    Visual Basic Editor is actually a seperate application that runs when you open Excel
 		Activation of the Visual Basic Editor:
-			1. Alt +F11 (when Excel is active)
-			2. Devloper Tab => "Visual Basic"
+		    1. Alt +F11 (when Excel is active)
+	       	    2. Devloper Tab => "Visual Basic"
 		Understanding VBE Components
-			Menu Bar
+		    VBE Program Window
+		    	Menu Bar
+				"works like any other menu bar"
+				Shortcut keys assocoiated with them
 			Toolbar
 			Project Window
+				tree diagram
 			Properties Window
 			Code Window
+				contains the VBA code
 			Immediate Window
-				
+				useful for executing VBA statements directly
+		    Working with the Project Window
+			Each Excel Workbook and add-in that's open is a project.
+			Project == a collection of objects arranged as an outline
+			Adding a new VBA Module
+				1. Automatically
+					"When you record a macro. Excel automatically inserts 
+					    a VBA module to hold the recorded code"
+					"Its location depends on where you chose to store the recorded macro"
+			VBA Modules can hold three types of code:
+				1. Declarations
+					"Information statements that you provide to VBA"
+					Examples:
+						Declare Data Type
+						Set module-wide Options
+				2. Sub Procedures
+					"A set of programming instructions that performs some action"
+					Example:
+						all recorded macros will be sub procedures
+				3. Function Procedures
