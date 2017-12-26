@@ -195,7 +195,42 @@ Section Core JavaScript
 				}
 				
 				factorial2(5)		// => 120
+
 		Object Oriented
 			Example 			// simple example that demonstrates how to define a javascript class
 							// "Objects that are instances of this class have a single method
 							//  named r() that computes the distance of the point from the origin"			
+			
+			// A simple example (of object oriented programming) that demonstrates how to define
+			//    a javascript class to represent 2D geometric points
+			// Define a constructor function to initialize a new Point object
+			function Point(x,y) {		// by convention, constuctors start with capitals
+				this.x = x;		// this keyword is the new object being initialized
+				this.y = y;		// store function arguments as object properties
+				}			// no return is necessary
+			// use a constructor function wiht the keyword "new" to create instances 	
+			var p = new Point(1,1);		// The geometric point (1,1) 		
+			// Define methods for Point objects by assigning them to the prototype
+			//     object associated with the constructor function	
+			Point.prototype.r = function() {
+				return Math.sqrt(	// return the math square root of x(to power of2) + y(to powewr of 2)
+				    this.x * this.x + this.y * this.y
+							// this is the Point object on which the method is invoked
+			// now the Point object p (and all future Point objects) inherits the method r() 
+			p.r() 				// => 1.414
+		Client Side Javascript
+			"Javascript coed can be embedded within HTML files using the <script> tag:
+			Example
+			<html>
+			<head>
+			<script src="library.js"></script> <!-- include a library of Javascript code -->
+			</head>
+			<body>
+			<p> This is a paragraph of HTML<p>
+			<script>  
+				//and this is some client side Javascript code literally embedded with the HTML file
+			</script>
+			<p> Here is more HTML. </p>
+			</body>
+			</html>
+
