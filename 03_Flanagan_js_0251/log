@@ -234,3 +234,19 @@ Section Core JavaScript
 			</body>
 			</html>
 
+		The Window Object
+			scripting the web browser
+			"global" function of client-side Javascript
+			
+			Example (of global functions)
+
+			<script>
+			function moveon() {	// display a modal dialog to ask the user a question 
+			var answer = confirm("Ready to move on?");
+			// If they clicked the "OK" button, make the browser load a new page
+			if (answer) window.location = "http://google.com";
+			}
+			// Run the function defined above 1 minute (60,000 milliseconds) frm now.
+			setTimeout(moveon, 60000);
+			</script>
+			
