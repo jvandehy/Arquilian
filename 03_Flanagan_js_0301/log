@@ -249,4 +249,55 @@ Section Core JavaScript
 			// Run the function defined above 1 minute (60,000 milliseconds) frm now.
 			setTimeout(moveon, 60000);
 			</script>
-			
+
+		Scripting Documents (Scripting HTML document content)		
+           		select particular HTML elements (from within the document)
+			set HTML attributes of those elements
+			alter the content of those elements
+			add new elements to the document
+
+			Example 
+			// Display a message in a special debugging output section of the document
+			// If the document does not contain such a section, create it
+			function debug(msg) {		// Find the debugging section of the 
+							//     document, looking at HTML id attributes
+			    var log = document.getElementById("debugging");
+			// If no element with the id "debugging" exists, create one.
+			    if (!log) {
+				log = document.createElement("div");
+							// create a new <div> element 
+				log.id = "debuglog";	// set HTML attribute on it
+				log.innerHTML = "<h1>DebugLog</h1>"; // define initial content
+				document.body.appendChild(log);	// add it at the end of the document
+				}
+			// now wrap the message in its own <pre> and append it to the log
+			    var pre = document.createElement("pre"); 	// create a <pre> tag
+			    var text = document.createTextNode(msg);	// wrap msg in a text node
+			    pre.appendChild(text);		// add text to the <pre>
+			    log.appendChild(pre);		// add <pre> to the log
+
+		Javascript can script the HTML elements that define web content
+
+		Use Javascript with the CSS styles that define the presentation of content
+			This is done with the style or class attribute of HTML elements
+
+			Example:
+
+			function hide(e, reflow) {	// hide the element e by scripting its style
+			    if (reflow) {		// if 2nd argument is true
+				e.style.visibility = "none" // hide element and use its space
+			    else {			// otherwise
+			        e.style.visibility = "hidden" // makes e invisible, but leave its space
+			    }
+			}
+			function highlight(e) {	 // highlight e by setting a CSS class
+						 // simply define or append to the HTML class attribute
+						 // this assumes that a CSS stylesheet already defines
+						 //    the "hilite" class
+			    if (!e.className) e.className = "hilite";
+			    else e.className  += "hilite";
+			}
+		Event Handlers
+			"Javascript allows us to script the HTML content and CSS presentation of documents
+			    in wen browsers, but it also allows us to dfine behavior for those documents
+			    with event handlers"

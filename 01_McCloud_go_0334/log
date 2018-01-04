@@ -300,4 +300,35 @@ a					boolean
 	    For example, like this, "fmt.Println()"
 		[x] true
 		[ ] false
-
+	28. What is "idiomatic Go code"?
+	    A: The clearest most straightforword code.
+	29. Which character allows you to "throw away returns" or "send returns into the void"? Said another way,
+	    which character allows you to tell the compiler that you are not going to use a value returned by a 
+	    function?
+		[ ] #
+		[ ] @
+		[x] _
+		[ ] This is a trick question
+	30. In Go you cannot have a variable which you do not use
+		[x] true
+		[ ] false
+	31. When you see that a func has a parameter of this type "...interface{}" this is called a "variadic
+	    paramenter" and it means that the func can take as many values of that type as you want to pass in
+		[x] true
+		[ ] false
+	32. Every value in Go is also of type "empty interface" which is expressed like this: "interface{}"
+		[x] true
+		[ ] false
+	33. A statement is an instruction that commands the computer to perform a specific action. Usually 
+	    statements take up a line in a program.
+		[x] true
+		[ ] false
+	34. An expression is a combination of one or more explicit values, constants, variables, operators,
+	    and functions that the programming language interprets and computes to produce another value. For
+	    example, 2+3 is an expression which evaluates to 5.
+		[x] true
+	        [ ] false
+	35. If I wanted to print a string and then assign that value to a variable, I could use the "func
+	    Sprintf()" from the "fmt" package.
+		[x] true
+		[ ] false
