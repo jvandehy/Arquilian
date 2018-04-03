@@ -89,7 +89,7 @@ Section 4.2 Basic Structure and Components of a Go Program
 			}
 	Package Level Declarations and Initializations
 
-			package main			// package declatation
+			package main			// package declaration
 			import (			// import declarations
 				"fmt"
 				"os"
