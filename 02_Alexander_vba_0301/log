@@ -212,15 +212,91 @@ Chapter 2 Introducing Visual Basic for Applications
 				6. Click "OK"
 	Working with the Visual Basic Editor
 		A Seperate Application
-			Visual Basic Editor is actually a seperate application that runs when you open Excel
+		    Visual Basic Editor is actually a seperate application that runs when you open Excel
 		Activation of the Visual Basic Editor:
-			1. Alt +F11 (when Excel is active)
-			2. Devloper Tab => "Visual Basic"
+		    1. Alt +F11 (when Excel is active)
+	       	    2. Devloper Tab => "Visual Basic"
 		Understanding VBE Components
-			Menu Bar
+		    VBE Program Window
+		    	Menu Bar
+				"works like any other menu bar"
+				Shortcut keys assocoiated with them
 			Toolbar
 			Project Window
+				tree diagram
 			Properties Window
 			Code Window
+				contains the VBA code
 			Immediate Window
-				
+				useful for executing VBA statements directly
+		    Working with the Project Window
+			Each Excel Workbook and add-in that's open is a project.
+			Project == a collection of objects arranged as an outline
+			Adding a new VBA Module
+				1. Automatically
+					"When you record a macro. Excel automatically inserts 
+					    a VBA module to hold the recorded code"
+					"Its location depends on where you chose to store the recorded macro"
+			VBA Modules can hold three types of code:
+				1. Declarations
+					"Information statements that you provide to VBA"
+					Examples:
+						Declare Data Type
+						Set module-wide Options
+				2. Sub Procedures
+					"A set of programming instructions that performs some action"
+					Example:
+						all recorded macros will be sub procedures
+				3. Function Procedures
+					"A set of Programming instructions that returns a single value"
+			"A single VBA module can store any number of Sub procedures, Function procedures,
+			    and declartions."
+		
+			How to Add a new VBA module to a project:
+			    	1. Select the project's name in the Project window.
+				2. Choose Insert => Module
+			How to remove a VBA module:
+				1. Select the module's name in the Project window
+				2. Choose File -> remove xxx where xxx is the module name
+
+		Working on the Code Window
+			Minimizing and Maximizing windows
+			Multiple Windows
+				Switch with Ctrl+Tab
+
+		Getting VBA Code into a module
+			1. Use the Excel macro recorder to record your actions and convert them to VBA code
+			2. Enter code directly
+			3.Copy code from one module and paste it into another
+
+		Line Contination
+			"A single line of code can be as long as you like."
+			"However, you may want to use the line-continuation character to break up lengthy 
+			    lines of code"
+			To continue a statement from one line to the next, end the first line with a space
+			    followed by an underscore (_). The continue the statement on the next line.
+			Example:
+				Selection.Sort Key1:=Range("A1"), _
+				    Order1:=x1Ascending, Header:=x1Guess, _
+				    Orientation:=x1TopToBottom
+		Undo and Redo
+			Undo : Ctrl Z or "undo" button
+			Redo : "redo" button
+
+	Entering "Real Live Code"
+		Steps
+		1. Create a new workbook in Excel
+		2. Activae the editor ("VBE") via Alt+F11
+		3. Click the new workbook's name in the Project window
+		4. Choose Insert => Module to insert a VBA module into the project
+		5. Type the code into the module
+			Sub GuessName() 
+			    Dim Msg as String
+			    Dim Ans As Long
+			    Msg = "Is your name" & Application.UserName &"?"
+			    Ans = MsgBox(Msg, vbYesNo)
+			    If Ans = vbNo Then MsgBox"Oh, never mind"
+			    If Ans = vbYes Then MsgBox"I must be clairvoyant!"
+			End Sub
+		6. Make sure the cursor is located anywhere within the text you typed and press F5
+		    to execute
